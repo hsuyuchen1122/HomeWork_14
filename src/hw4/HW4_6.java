@@ -9,19 +9,19 @@ public class HW4_6 {
 				{77,95,70,89,60,75,85,89},
 				{98,70,89,90,75,90,89,90},
 				{90,80,100,75,50,20,99,75},
-				};
-		int count1;
-		int hs = 0;	
+		};
+		
 		int[] student = new int[8];
+		
 			for (int i = 0; i < 6; i++) {
 				for (int j = 0; j < 8; j++) {
-					count1 = 0;
+					int count1 = 0;
+					
 					for (int k = 0; k < 8; k++) {
 						if(exam[i][j] > exam[i][k]) {
-							count1 = count1 + 1;
+							count1++;
 							if (count1 == 7) {
-								hs = j;
-								student[hs] += 1;
+								student[j]++;
 							}
 						}
 					}

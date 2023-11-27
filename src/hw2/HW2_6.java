@@ -13,7 +13,8 @@ public class HW2_6 {
 			}
 		}
 		
-		System.out.println(" " + count + " ");
+		System.out.println(" ");
+		System.out.println("總共有" + count + "個");
 	}
 
 }
