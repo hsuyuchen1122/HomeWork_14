@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class HW4_5 {
 	public static void main(String[] args) {
 		int[] d1 = {31,28,31,30,31,30,31,31,30,31,30,31};
-		Scanner dsc = new Scanner(System.in);
+		Scanner dsc = new Scanner(System.in); 
 		
 		System.out.println("請輸入西元年(yyyy)=");
 		int year = dsc.nextInt();
