@@ -7,6 +7,8 @@ public class HW4_2 {
 			System.out.print(s1[i]);
 		    }
 		System.out.println();
+		
+		//System.out.println(new StringBuffer("Hello World").reverse());
 	}
 
 }

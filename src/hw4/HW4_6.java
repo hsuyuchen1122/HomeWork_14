@@ -14,27 +14,23 @@ public class HW4_6 {
 		int[] student = new int[8];
 		
 			for (int i = 0; i < 6; i++) {
+				int maxScore = exam[i][0];
+				
 				for (int j = 0; j < 8; j++) {
-					int count1 = 0;
-					
-					for (int k = 0; k < 8; k++) {
-						if(exam[i][j] > exam[i][k]) {
-							count1++;
-							if (count1 == 7) {
-								student[j]++;
-							}
-						}
+					if(exam[i][j] > maxScore) {
+						maxScore = exam[i][j];
 					}
 				}
 				
+				for(int j = 0; j < 8; j++) {
+					if(exam[i][j] == maxScore) {
+						student[j]++;
+					}
+				}
 			}
-		System.out.println("1號同學考最高分次數=" + student[0]);
-		System.out.println("2號同學考最高分次數=" + student[1]);
-		System.out.println("3號同學考最高分次數=" + student[2]);
-		System.out.println("4號同學考最高分次數=" + student[3]);
-		System.out.println("5號同學考最高分次數=" + student[4]);
-		System.out.println("6號同學考最高分次數=" + student[5]);
-		System.out.println("7號同學考最高分次數=" + student[6]);
-		System.out.println("8號同學考最高分次數=" + student[7]);
+			
+			for(int i = 0; i < 8; i++) {
+				System.out.println((i + 1) + "號同學考最高分次數=" + student[i]);
+			}
 	}
 }
